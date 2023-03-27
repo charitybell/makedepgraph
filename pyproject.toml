@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "makedepgraph"
+version = "0.1.0"
+description = ""
+authors = ["charitybell <hello@charitybell.xyz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dataclasses-json = "^0.5.7"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.1.1"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+flake8-pyproject = "^1.2.3"
+
+[tool.flake8]
+max-line-length = 99
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
